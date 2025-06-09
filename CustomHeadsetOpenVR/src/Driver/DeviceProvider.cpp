@@ -17,7 +17,7 @@ vr::EVRInitError CustomHeadsetDeviceProvider::Init(vr::IVRDriverContext *pDriver
 	char driverPath[2048];
 	vr::VRResources()->GetResourceFullPath("", "", driverPath, sizeof(driverPath));
 	driverConfigLoader.info.steamvrResources = driverPath;
-	vr::VRResources()->GetResourceFullPath("{CustomHeadsetOpenVR}", "", driverPath, sizeof(driverPath));
+	vr::VRResources()->GetResourceFullPath("{MeganeXsuperlight8K_Native}", "", driverPath, sizeof(driverPath));
 	driverConfigLoader.info.driverResources = driverPath;
 	driverConfigLoader.Start();
 	// inject hooks into functions
